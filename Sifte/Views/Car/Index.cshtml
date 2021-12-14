@@ -1,0 +1,30 @@
+﻿@using Sifte.Model
+
+@{
+    Layout = "_Layout";
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Car car1 in ViewBag.Cars)
+        {
+            <tr>
+                <th scope="row">@car1.Id</th>
+                <td>@car1.Name</td>
+                <td>@car1.Brand</td>
+                <td>@car1.Color</td>
+            </tr>
+        }
+    </tbody>
+</table>
